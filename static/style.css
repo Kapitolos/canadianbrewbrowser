@@ -3,8 +3,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(233, 233, 145);
     background-position-x: center;
-    background-position-y: -3%;
-    background-size: 86%;
+    background-size: 100%;
 }
 
 .dropdowncan {
@@ -31,6 +30,15 @@ border-style: solid;
     height: 61%;
 	background:linear-gradient(rgb(255, 255, 161), white);
 	padding: 10px;
+}
+
+#brewtext {
+  animation-name: typewriter;
+  animation-duration: 2s;
+}
+@keyframes typewriter{
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
 #subbut {
