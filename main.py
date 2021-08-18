@@ -10,7 +10,7 @@ app = Flask(__name__)
 url = 'http://www.beercrank.ca/p/canadian-breweries.html'
 page = requests.get(url)
 soup = BeautifulSoup(page.text, 'lxml')
-prettify = soup.prettify()
+
 
 
 
@@ -42,12 +42,6 @@ Prince_Edward_Island = text[pei:qub]
 Quebec = text[qub:sas]
 Saskatchewan = text[sas:terr]
 Territories = text[terr:end]
-
-
-albertalinks = soup.find_all("ALberta")
-for link in soup.find_all('a'):
-    print(link.get('href'))
-
 
 # This is a function to have the query call the appropriate variable.
 def pour_the_brew(data):
@@ -120,14 +114,17 @@ def pour_the_brew(data):
     else:
         print("Error in query selection")
 
+placeholder = ["""
+Hey, we found a dead mouse in our beer, eh? That means you owe us a free case.”
+- Doug McKenzie, 'Strange Brew'."""]
+
 @app.route("/",  methods = ['GET', 'POST'])
-def hello_world():
+def brewery_page():
     if request.method == 'POST':
         data = request.form.to_dict()
         return pour_the_brew(data["provinces"])
-        # return render_template('index.html', brewlist=brewlist)
     else:
-        return render_template('index.html', brewlist="")
+        return render_template('index.html', brewlist=placeholder)
 
 
 
