@@ -1,0 +1,73 @@
+body {
+	background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(233, 233, 145);
+    background-position-x: center;
+    background-position-y: -3%;
+    background-size: 86%;
+	background-image:;
+}
+
+.dropdowncan {
+color: rgb(92, 90, 0);
+position: absolute;
+margin-left: 35%;
+background:linear-gradient(rgb(255, 255, 161), white);
+padding: 10px;
+text-align: center;
+border-style: solid;
+
+}
+
+
+#brewlist {
+    text-align: center;
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 35%;
+    border-style: solid;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 30%;
+    height: 61%;
+	background:linear-gradient(rgb(255, 255, 161), white);
+	padding: 10px;
+	/* visibility: hidden; */
+}
+
+#subbut {
+	border-radius: 15%;
+	background-color: rgb(252, 252, 220) ;
+}
+
+h4 {
+	font-style: italic;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+}
+
+#footer {
+	margin-top: 47%;
+    margin-left: 40%;
+    position: absolute;
+	color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px rgb(2, 2, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgb(255, 173, 49);
+	border-radius: 35px;
+	cursor: pointer;
+  }
