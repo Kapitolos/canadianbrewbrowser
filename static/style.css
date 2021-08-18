@@ -132,13 +132,13 @@ color: white;
   #brewlist {
     text-align: left;
     position: absolute;
-    margin-top: 72%;
-    margin-left: 6%;
+    margin-top: 66%;
+    margin-left: 3%;
     border-style: solid;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 76%;
-    height: 48%;
+    width: 80%;
+    height: 53%;
     background: linear-gradient(rgb(255, 255, 161), white);
     padding: 10px;
   }
@@ -156,10 +156,10 @@ color: white;
   }
   
   #footer {
-  margin-top: 171%;
-  margin-left: 40%;
-  position: absolute;
-  color: white;
+    margin-top: 197%;
+    margin-left: 4%;
+    position: absolute;
+    color: white;
   }
   
     }
